@@ -1,148 +1,178 @@
 <!DOCTYPE html>
-<!-- saved from url=(0072)file:///C:/Users/USU%C3%81RIO/Downloads/APP%20ONLINE/appfuncionando.html -->
-<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download App Motoboys Disponíveis</title>
-    <style>
-        :root {
-            --primaria: #ff0000;
-            --escura: #000000;
-            --clara: #ffffff;
-            --azul-botao: #0056b3;
-        }
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--clara);
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            color: var(--escura);
-        }
+<title>Download App Motoboys Disponíveis</title>
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1100px;
-            padding: 20px;
-            gap: 50px;
-            align-items: center;
-            justify-content: center;
-        }
+<style>
 
-        /* --- Mockup do Celular Funcional --- */
-        .iphone-mockup {
-            width: 340px;
-            height: 680px;
-            border: 12px solid var(--escura);
-            border-radius: 45px;
-            position: relative;
-            box-shadow: 0 25px 60px rgba(0,0,0,0.3);
-            background: #fff;
-            overflow: hidden; /* Garante que o iframe não saia das bordas */
-        }
+:root{
+    --primaria:#ff0000;
+    --escura:#000000;
+    --clara:#ffffff;
+    --azul-botao:#0056b3;
+}
 
-        .iphone-notch {
-            width: 160px;
-            height: 28px;
-            background: var(--escura);
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            border-bottom-left-radius: 18px;
-            border-bottom-right-radius: 18px;
-            z-index: 10;
-        }
+body{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background-color:var(--clara);
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    color:var(--escura);
+}
 
-        /* --- Iframe: Onde o seu link aparece --- */
-        .app-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            padding-top: 20px; /* Espaço para não ficar embaixo do notch */
-        }
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    max-width:1100px;
+    padding:20px;
+    gap:50px;
+    align-items:center;
+    justify-content:center;
+}
 
-        /* --- Texto Lateral (Mantido) --- */
-        .hero-text {
-            flex: 1;
-            min-width: 320px;
-            max-width: 550px;
-        }
+/* Mockup celular */
 
-        .hero-text h1 { font-size: 2.8rem; margin-bottom: 15px; color: var(--escura); }
-        .hero-text p { font-size: 1.15rem; line-height: 1.6; color: #333; }
+.iphone-mockup{
+    width:340px;
+    height:680px;
+    border:12px solid var(--escura);
+    border-radius:45px;
+    position:relative;
+    box-shadow:0 25px 60px rgba(0,0,0,0.3);
+    background:#fff;
+    overflow:hidden;
+}
 
-        .download-area { margin-top: 40px; }
-        .btn-download {
-            display: inline-block;
-            background-color: var(--azul-botao);
-            color: white;
-            padding: 18px 35px;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
-        }
-        .btn-download:hover { 
-            background-color: #004494; 
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
-        }
+.iphone-notch{
+    width:160px;
+    height:28px;
+    background:var(--escura);
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    border-bottom-left-radius:18px;
+    border-bottom-right-radius:18px;
+    z-index:10;
+}
 
-    </style>
+.app-iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    padding-top:20px;
+}
+
+/* Texto lateral */
+
+.hero-text{
+    flex:1;
+    min-width:320px;
+    max-width:550px;
+}
+
+.hero-text h1{
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:1.15rem;
+    line-height:1.6;
+    color:#333;
+}
+
+.download-area{
+    margin-top:40px;
+}
+
+.btn-download{
+    display:inline-block;
+    background-color:var(--azul-botao);
+    color:#fff;
+    padding:18px 35px;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:20px;
+    transition:0.3s;
+    box-shadow:0 4px 15px rgba(0,86,179,0.3);
+}
+
+.btn-download:hover{
+    background-color:#004494;
+    transform:translateY(-3px);
+    box-shadow:0 6px 20px rgba(0,86,179,0.4);
+}
+
+</style>
 </head>
+
 <body>
 
 <div class="container">
-    
+
+    <!-- Celular -->
     <div class="iphone-mockup">
+
         <div class="iphone-notch"></div>
-        <iframe src="./Download App Motoboys Disponíveis_files/saved_resource.html" class="app-iframe" title="App de Entregas">
+
+        <iframe
+            src="https://ammeeppa-crypto.github.io/solicitacao-entregas/"
+            class="app-iframe"
+            title="App de Entregas"
+            loading="lazy">
         </iframe>
+
     </div>
 
-    <!-- Texto lateral -->
+    <!-- Texto -->
     <div class="hero-text">
+
         <h1>Agilize suas Entregas</h1>
+
         <p>
-            <p>
-    Nosso aplicativo gera <strong>mensagens padrão personalizadas</strong> para o seu negócio de delivery. 
-    Com apenas alguns cliques, você envia todos os dados do pedido via WhatsApp para o grupo dos motoboys disponíveis.
-</p>
-
-<p>
-    Tudo fica organizado e dentro do padrão exigido pelo grupo.
-</p>
-
-<p>
-    A taxa de retorno é adicionada automaticamente ao solicitar o retorno.
-</p>
-
-<p>
-    Tudo isso foi desenvolvido para facilitar sua solicitação, trazendo agilidade e organização ao seu negócio.
-</p>
-
-        </p>
-       
-        <p>
-
-            📍 <strong>Geo-localização Integrada:</strong> você pode colocar a Geo-localização do seu estabelecimento, o ponto de recolhimento para facilitar a rota do entregador.
+        Nosso aplicativo gera <strong>mensagens padrão personalizadas</strong>
+        para o seu negócio de delivery.
         </p>
 
+        <p>
+        Com apenas alguns cliques, você envia todos os dados do pedido
+        via WhatsApp para os motoboys disponíveis.
+        </p>
+
+        <p>
+        A taxa de retorno é adicionada automaticamente e tudo fica organizado.
+        </p>
+
+        <p>
+        📍 <strong>Geo-localização Integrada:</strong>
+        facilita a rota do entregador automaticamente.
+        </p>
+
+        <!-- Botão download -->
         <div class="download-area">
-            <a href="https://ammeeppa-crypto.github.io/solicitacao-entregas/" class="btn-download">FAZER DOWNLOAD DO APP</a>
+
+            <a
+            href="https://ammeeppa-crypto.github.io/solicitacao-entregas/"
+            class="btn-download"
+            target="_blank">
+
+            FAZER DOWNLOAD DO APP
+
+            </a>
+
         </div>
+
     </div>
 
 </div>
 
-</div>
-
-
-</body></html>
+</body>
+</html>
